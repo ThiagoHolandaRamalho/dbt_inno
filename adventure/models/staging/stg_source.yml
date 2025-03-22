@@ -1,0 +1,9 @@
+version: 1
+
+sources:
+  - name: innoveo
+    schema: dbo
+    tables:
+      - name : bilhetes_cyber
+      
+      - name : parcelas_cyber

@@ -1,0 +1,15 @@
+adventure:
+  outputs:
+    dev:
+      database:     "{{ env_var('DATABASE')}}"
+      host:         "{{ env_var('HOST')}}" 
+      driver:       "{{ env_var('DRIVER')}}"
+      password:     "{{ env_var('PASSWORD')}}"
+      port:         "{{ env_var('PORT') | int }}"
+      threads:      "{{ env_var('THREADS') | int }}"
+      schema:       "{{ env_var('SCHEMA')}}"
+      encrypt:       True
+      type:         "{{ env_var('TYPE')}}"
+      user:         "{{ env_var('USER')}}"
+      trust_cert:    True
+  target: dev
